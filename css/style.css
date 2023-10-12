@@ -5,6 +5,20 @@
 }
 
 .grid-container {
+
+    display: grid;
+    grid-template-columns: 200px 300px 200px;   /*колонки*/
+    grid-template-rows: 60px 150px 60px;        /*строки*/
+    column-gap: 20px;                           /*отступ колонок*/
+    row-gap: 10px;                              /*отступ строк*/     
+    /* grid-template: 0px 150px 60px / 200px 300px 200px;  строки / колонки */
+    grid-auto-rows: 200px;  
+    /* grid-auto-columns: 200px;         неявные гриды */
+}
+
+
+
+/* .grid-container {
     width: 600px;
     height: 600px;
     display: grid;
@@ -15,7 +29,8 @@
        grid-template-rows: 0.5fr 1fr 1fr;
     */
 
-}
+/* }  */
+
 
 .grid-elem {
     /* height: 50px; */
